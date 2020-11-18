@@ -1,0 +1,22 @@
+{
+  "name": "tailwind-acacompro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss styles/tailwind.css -o styles/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.1.7",
+    "postcss-cli": "^8.3.0",
+    "postcss-import": "^13.0.0",
+    "autoprefixer": "^10.0.2",
+    "postcss-custom-properties": "^10.0.0",
+    "postcss-nested": "^5.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^2.0.1"
+  }
+}
