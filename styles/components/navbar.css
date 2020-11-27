@@ -1,0 +1,7 @@
+.navbar {
+  @apply flex justify-between py-4 bg-white px-14;
+
+  .navbar-icons > * {
+    @apply ml-4;
+  }
+}

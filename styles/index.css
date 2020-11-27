@@ -29819,9 +29819,9 @@ video {
 
 /* Utilities */
 
-xmp {
+xmp, code {
   --tw-bg-opacity: 1;
-  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
 }
 
 /* Components */
@@ -29849,6 +29849,10 @@ xmp {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 
+.btn:hover {
+    --tw-bg-opacity: 0.8;
+  }
+
 .label {
   display: block;
   font-size: 0.875rem;
@@ -29856,15 +29860,49 @@ xmp {
 }
 
 .input {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   --tw-border-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  border-color: rgba(156, 163, 175, var(--tw-border-opacity));
   border-radius: 0.25rem;
   border-width: 1px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.input:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(5, 61, 117, var(--tw-border-opacity));
+  }
+
+.card {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.375rem;
+  padding: 2rem;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.navbar {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.navbar .navbar-icons > * {
+    margin-left: 1rem;
+  }
 
 @media (min-width: 640px) {
   .sm\:container {

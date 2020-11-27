@@ -1,11 +1,15 @@
 .btn {
-  @apply px-4 py-2 rounded font-semibold;
+  @apply px-4 py-2 font-semibold rounded;
 
   &--blue {
-    @apply bg-blue text-white;
+    @apply text-white bg-blue;
   }
 
   &--teal {
-    @apply bg-teal text-white;
+    @apply text-white bg-teal;
+  }
+
+  &:hover {
+    @apply bg-opacity-80;
   }
 }
